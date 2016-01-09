@@ -1,31 +1,14 @@
 body {
-    background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-hgroup {
-    width: 40%;
-    /* height: 80%;*/
-    background-color: cornsilk;
-    color: brown;
-    display: block;
-    padding: 10px;
-    border-radius: 30px;
-    margin: 20px;
-    text-align: center;
+    background-color: #F1F4F1;
+    /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 
-/* "font-style font-variant font-weight font-size/line-height font-family"
-font-style: normal|italic|oblique|initial|inherit;
-font-variant: normal|small-caps|initial|inherit;
-font-weight: normal|bold|bolder|lighter|number|initial|inherit;
-font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;
-*/
+.modal-body {
 
-span {
-    font: bold larger Georgia, serif;
+    background-color: #D4E1D4;
 }
+
 
 .exercise {
     padding: 0px 20px;
@@ -36,9 +19,13 @@ span {
 
 
 .results {
-    background-color: cornsilk;
+    /*background-color: #D4E1D4;
+        color: #3c2a35;*/
     border-radius: 10px;
-    color: firebrick;
+
+    /*color: #FFFFFF; 
+    background-color: #507c50;*/
+    color: #4b3542; background-color: #ADCAAD;
     font-weight: bold;
     margin: 5px 0px 0px 0px;
     padding: 5px 10px;
@@ -54,10 +41,10 @@ span {
 
 #fizzBuzzResult {
     /* font-family: Consolas, monaco, monospace; */
-    visibility:hidden;
+    /*visibility:hidden;*/
     font-family: monaco, monospace;
     text-indent: 0px;
-    width: 100%;
+    width: 100%;    
     text-align: justify;
     font-size:x-small;
     overflow:auto;
@@ -72,8 +59,8 @@ span {
 .jobDetail {
 background-color: aqua;
     text-align: justify;
-    font-size:larger;
-    font-weight:300;
+    font-size:x-large;
+    font-weight:800;
 }
 
 .jobLocation {
