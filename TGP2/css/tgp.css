@@ -55,14 +55,33 @@ body {
     width: 100%;
 }
 
+.lead{
+    font-weight:900;
+}
 
 .jobDetail {
 background-color: aqua;
+color: black;
     text-align: justify;
-    font-size:x-large;
-    font-weight:800;
+    font-size:xx-large;
+    font-weight:900;
 }
 
 .jobLocation {
     text-align: center;
+}
+.resultsBtn {
+    margin:7px 0px 0px;
+}
+
+#fizzBuzzResult {
+    margin:20px 0px 0px;
+}
+
+#factorialResult {
+    margin-left: inherit; 
+}
+
+#numFactorial {
+    -webkit-user-modify: read-write-plaintext-only;
 }

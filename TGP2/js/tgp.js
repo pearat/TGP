@@ -58,11 +58,21 @@ $(document).ready(function () {
     });
     
     
-    $('#freezeBtn').click(function () {
-
+    $('.tgpFacebook').on('click',function () {
+        alert("clicked Facebook image");
+        //$(tgpFacebook).attr('href', "https://www.facebook.com/public/Tim-Peara");
     });
     
-    $('#numSeriesBtn').click(function () {
+
+    $('#numSeriesModal').on('shown.bs.modal', function () {
+        $(this).find('input:first').focus();
+    });
+    $('#numSeries').keyup(function (event) {
+        if (event.keyCode == '13') {
+            $('#numSeriesBtn').click();
+        }
+    });
+    $('#numSeriesBtn').click(function ()  {
 
         var numString = $(numSeries).val();
         var numStringArray = numString.split(/\s|,|\/|\\/); // .split(/\D^-/);
@@ -90,43 +100,94 @@ $(document).ready(function () {
     });
 
 
+
+    $('#factorialModal').on('shown.bs.modal', function () {
+        $(this).find('input:first').focus();
+    });
+    $('#numFactorial').keyup(function (event) {
+        if (event.keyCode == '13') {
+            $('#factorialBtn').click();
+        }
+    });
     $('#factorialBtn').click(function () {
         var numFact = $(numFactorial).val();
-        console.log("numFact: " + numFact);
         numFact = factorial(numFact);
-        $('#factorialResult').html("<p> Factorial: " + addCommas(numFact) + "<\p>");
+        $('#factorialResult').html("<p>n! = " + addCommas(numFact) + "<\p>");
         $('#factorialResult').css('visibility', 'visible');
     });
 
 
+    $('.digitsOnly').keyup(function () {
+        var v = this.value.replace(/[^0-9]/g, '');
+        //if (this.value != v) {
+            this.value = v;
+        //}
+    });
+    $('#fizzBuzzModal').on('shown.bs.modal', function () {
+        $(this).find('input:first').focus();
+    });
+    $('#buzz').keyup(function (event) {
+        if (event.keyCode == '13') {
+            $('#fizzBuzzBtn').click();
+        }
+    });
     $('#fizzBuzzBtn').click(function () {
 
-        var fz = Number($(fizz).val()); // make sure > 0, < 101
-        var bz = Number($(buzz).val());
-
-        var s = ss = "";
-        for (j = 1; j <= 100; j++) {
-            s = "";
-            if (j % fz == 0) s += "fizz";
-            if (j % bz == 0) s += "buzz";
-            if ((j % fz != 0) && (j % bz != 0)) {
-                s += j;
-                if (j < 10) s += "...";
-                else s += "..";
-            }
-            if ((j % fz == 0) && (j % bz == 0)) {
-                s += ".";
-                s = s.toUpperCase();
-            }
-            s += ".";
-            if (j % 10 == 0) s += "<br>";
-            ss += s;
+        var s = ss = '';
+        if ($('#fizz').val()=='' || $('#buzz').val()=='') {
+            ss += 'Enter a number in each box.<br />';
         }
-        ss += "\n";
+        else {
+            var fz = Number($(fizz).val());
+            var bz = Number($(buzz).val());
+            if (fz < 1 || bz < 1) ss += 'Numbers can\'t be less than 1.<br/>';
+            if (fz > 100 || bz > 100) ss += 'Numbers can\'t be more than 100.<br/>';
+            if (fz != Math.round(fz) || bz != Math.round(bz)) ss += 'Integers only, please.<br/>';
+            if (fz > bz) {
+                var x = fz;
+                fz = bz;
+                bz = x;
+                $(fizz).val(fz);
+                $(buzz).val(bz);
+            }
+        }
+
+        if (ss == "") {
+            for (j = 1; j <= 100; j++) {
+                s = "";
+                if (j % fz == 0) s += "fizz";
+                if (j % bz == 0) s += "buzz";
+                if ((j % fz != 0) && (j % bz != 0)) {
+                    s += j;
+                    if (j < 10) s += "...";
+                    else s += "..";
+                }
+                if ((j % fz == 0) && (j % bz == 0)) {
+                    s += ".";
+                    s = s.toUpperCase();
+                }
+                s += ".";
+                if (j % 10 == 0) s += "<br>";
+                ss += s;
+            }
+            ss += "\n";
+        } else {
+            ss += 'Please try again.';
+        }
+        
         $('#fizzBuzzResult').html(ss);
         $('#fizzBuzzResult').css('visibility', 'visible');
     });
 
+
+    $('#palindromeModal').on('shown.bs.modal', function () {
+        $(this).find('input:first').focus();
+    });
+    $('#paliWord').keyup(function (event) {
+        if (event.keyCode == '13') {
+            $('#palindromeBtn').click();
+        }
+    });
     $('#palindromeBtn').click(function () {
 
         var checkWord = $(paliWord).val().match(/[^_\W\d]+/g).join('').toUpperCase();
@@ -146,6 +207,7 @@ $(document).ready(function () {
             $('#palindromeResult').html(checkWord + isPalindrome).css('visibility', 'visible');
         }
     });
+
 
 
     $('.modal').on('hidden.bs.modal', function () {
@@ -183,7 +245,6 @@ $(document).ready(function () {
     } // end calculate statistics
 
     function factorial(n) {
-        console.log("n: " + n);
         if (n <= 1) {
             return 1;
         } else {
@@ -202,6 +263,7 @@ $(document).ready(function () {
         }
         return x1 + x2;
     }
+
 
 
 });
