@@ -259,9 +259,13 @@
     <Content Include="favicon.ico" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
-    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="font-awesome\HELP-US-OUT.txt" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -421,11 +425,21 @@
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="font-awesome\fonts\fontawesome-webfont.woff2" />
-    <Content Include="font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="font-awesome\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="font-awesome\less\animated.less" />
     <Content Include="font-awesome\less\bordered-pulled.less" />
     <Content Include="font-awesome\less\core.less" />
@@ -452,11 +466,21 @@
     <Content Include="font-awesome\scss\_rotated-flipped.scss" />
     <Content Include="font-awesome\scss\_stacked.scss" />
     <Content Include="font-awesome\scss\_variables.scss" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\tpeara - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\tpeara - Web Deploy.pubxml" />
     <Content Include="rs-plugin\assets\arrows.psd" />
@@ -516,7 +540,10 @@
     <Content Include="Scripts\SyntaxHighlighter\shLegacy.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="scss\favicon.ico" />
-    <Content Include="themify-icons\fonts\themify.svg" />
+    <Content Include="themify-icons.css" />
+    <Content Include="themify-icons\fonts\themify.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="themify-icons\ie7\ie7.css" />
     <Content Include="themify-icons\ie7\ie7.js" />
     <Content Include="themify-icons\readme.txt" />
@@ -828,6 +855,7 @@
     <Content Include="themify-icons\SVG\text.svg" />
     <Content Include="themify-icons\SVG\themify-favicon-alt.svg" />
     <Content Include="themify-icons\SVG\themify-favicon.svg" />
+    <Content Include="themify-icons\SVG\themify-icons.css" />
     <Content Include="themify-icons\SVG\themify-logo.svg" />
     <Content Include="themify-icons\SVG\thought.svg" />
     <Content Include="themify-icons\SVG\thumb-down.svg" />
@@ -872,7 +900,9 @@
     <Content Include="themify-icons\SVG\zip.svg" />
     <Content Include="themify-icons\SVG\zoom-in.svg" />
     <Content Include="themify-icons\SVG\zoom-out.svg" />
-    <Content Include="themify-icons\themify-icons.css" />
+    <Content Include="themify-icons\themify-icons.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -910,9 +940,15 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="scss\one-page-dark.scss" />
     <Content Include="scss\one-page.scss" />
-    <Content Include="themify-icons\fonts\themify.eot" />
-    <Content Include="themify-icons\fonts\themify.ttf" />
-    <Content Include="themify-icons\fonts\themify.woff" />
+    <Content Include="themify-icons\fonts\themify.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themify-icons\fonts\themify.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="themify-icons\fonts\themify.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="themify-icons\Themify IconFonts 5-23-2014.json" />
   </ItemGroup>
   <ItemGroup>

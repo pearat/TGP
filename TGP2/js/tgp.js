@@ -58,10 +58,10 @@ $(document).ready(function () {
     });
     
     
-    $('.tgpFacebook').on('click',function () {
-        alert("clicked Facebook image");
-        //$(tgpFacebook).attr('href', "https://www.facebook.com/public/Tim-Peara");
-    });
+    //$('.tgpFacebook').on('click',function () {
+    //    alert("clicked Facebook image");
+    //    //$(tgpFacebook).attr('href', "https://www.facebook.com/public/Tim-Peara");
+    //});
     
 
     $('#numSeriesModal').on('shown.bs.modal', function () {
@@ -89,11 +89,11 @@ $(document).ready(function () {
 
             numStats = calculateStatistics(numArray);
 
-            $('#results').html("<p> min: " + addCommas(numStats.min) + "<\p>" +
-            "<p> max: " + addCommas(numStats.max) + "<\p>" +
-            "<p> mean: " + addCommas(numStats.mean.toFixed(2)) + "<\p>" +
-            "<p> sum: " + addCommas(numStats.sum) + "<\p>" +
-            "<p> product: " + addCommas(numStats.product.toFixed(2)) + "<\p>");
+            $('#results').html("<p> min: " + addCommas(numStats.min.toFixed(3)) + "<\p>" +
+            "<p> max: " + addCommas(numStats.max.toFixed(3)) + "<\p>" +
+            "<p> mean: " + addCommas(numStats.mean.toFixed(3)) + "<\p>" +
+            "<p> sum: " + addCommas(numStats.sum.toFixed(3)) + "<\p>" +
+            "<p> product: " + addCommas(numStats.product.toFixed(3)) + "<\p>");
 
         }
         $('#results').css('visibility', 'visible');

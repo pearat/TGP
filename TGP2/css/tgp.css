@@ -57,6 +57,7 @@ body {
 
 .lead{
     font-weight:900;
+    font-size: 2em;
 }
 
 .jobDetail {
@@ -80,8 +81,21 @@ color: black;
 
 #factorialResult {
     margin-left: inherit; 
+    /*text-align:center;*/
 }
 
 #numFactorial {
-    -webkit-user-modify: read-write-plaintext-only;
+    outline-style:none;
+    /*box-shadow:none;
+    border-color:transparent;*/
+}
+
+
+/*input {
+  -webkit-user-modify: read-write-plaintext-only;
+}*/
+
+ 
+.mySkills {
+    visibility:visible;
 }
