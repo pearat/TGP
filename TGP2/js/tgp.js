@@ -3,6 +3,8 @@
 
 $(document).ready(function () {
 
+    $('.mySkills').css('visibility', 'visible');
+
     $('[data-toggle="popover"]').popover({
         placement: 'bottom'
     });
