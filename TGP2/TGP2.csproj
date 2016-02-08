@@ -317,6 +317,7 @@
     <Content Include="img\UK_US_patch.jpg" />
     <Content Include="img\US_UK_patch.jpg" />
     <Content Include="img\Vortex.jpg" />
+    <Content Include="indexOldOrder.html" />
     <Content Include="index.html" />
     <Content Include="js\contact_me.js" />
     <Content Include="js\cube-portfolio.js" />
