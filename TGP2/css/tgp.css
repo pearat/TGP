@@ -10,7 +10,7 @@ body {
 
 
 .exercise {
-    padding: 0px 20px;
+    padding: 0 20px;
     margin-bottom: 20px;
     text-align: left;
     /*float: left;*/
@@ -22,7 +22,7 @@ body {
     color: #4b3542; 
     background-color: #ADCAAD;
     font-weight: bold;
-    margin: 5px 0px 0px 0px;
+    margin: 5px 0 0 0;
     padding: 5px 10px;
     visibility: hidden;
     width: 100%;
@@ -30,12 +30,12 @@ body {
 
 .warn {
     color: crimson;
-    text-indent: 0px;
+    text-indent: 0;
 }
 
 #fizzBuzzResult {
     font-family: monaco, monospace;
-    text-indent: 0px;
+    text-indent: 0;
     width: 100%;    
     text-align: justify;
     font-size:x-small;
@@ -43,7 +43,7 @@ body {
 }
 
 #palindromeResult {
-    text-indent: 0px;
+    text-indent: 0;
     width: 100%;
 }
 
@@ -64,11 +64,11 @@ color: black;
     text-align: center;
 }
 .resultsBtn {
-    margin:7px 0px 0px;
+    margin:7px 0 0;
 }
 
 #fizzBuzzResult {
-    margin:20px 0px 0px;
+    margin:20px 0 0;
 }
 
 #factorialResult {

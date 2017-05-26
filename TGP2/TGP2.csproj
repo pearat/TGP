@@ -305,19 +305,18 @@
     <Content Include="img\sports-ball-collection.jpeg" />
     <Content Include="img\sports-balls.jpg" />
     <Content Include="img\statistics.jpg" />
+    <Content Include="img\TCM_Charleston_20160523.jpg" />
     <Content Include="img\teddy_panama.jpg" />
     <Content Include="img\Tennis_pictogram.png" />
     <Content Include="img\tgp.jpg" />
     <Content Include="img\tgp2.jpg" />
-    <Content Include="img\Tim_Beach.jpg" />
+    <Content Include="img\Tim-Pikachu_20160806e.jpg" />
     <Content Include="img\Tim_Galkanesh.jpg" />
-    <Content Include="img\Tim_Grad.jpg" />
     <Content Include="img\Tim_Hazar.jpg" />
     <Content Include="img\tlogo.png" />
     <Content Include="img\UK_US_patch.jpg" />
     <Content Include="img\US_UK_patch.jpg" />
     <Content Include="img\Vortex.jpg" />
-    <Content Include="indexOldOrder.html" />
     <Content Include="index.html" />
     <Content Include="js\contact_me.js" />
     <Content Include="js\cube-portfolio.js" />
@@ -340,18 +339,13 @@
     <Content Include="js\tgp.js" />
     <Content Include="js\tweetie.min.js" />
     <Content Include="js\waypoints.min.js" />
+    <Content Include="js\wow.1.1.2.min.js" />
     <Content Include="js\wow.min.js" />
     <Content Include="mail\contact_me.php" />
     <Content Include="nested_row.html" />
     <Content Include="one-page-dark.html" />
-    <Content Include="publications\Bradys.png" />
-    <Content Include="publications\Bradys2.png" />
     <Content Include="publications\FAN.png" />
-    <Content Include="publications\Kgradneft.png" />
-    <Content Include="publications\Kgradneft2.png" />
-    <Content Include="publications\Mechanics.png" />
     <Content Include="publications\Mechanics2.png" />
-    <Content Include="publications\Vortex.png" />
     <Content Include="publications\Vortex2.png" />
     <Content Include="rs-plugin\assets\arrowleft.png" />
     <Content Include="rs-plugin\assets\arrowright.png" />
@@ -490,14 +484,12 @@
     <Content Include="rs-plugin\font\revicons.eot" />
     <Content Include="rs-plugin\font\revicons.ttf" />
     <Content Include="rs-plugin\font\revicons.woff" />
-    <Content Include="publications\Brady_Bonds_tgp.pdf" />
-    <Content Include="publications\Kaliningradneft_tgp.pdf" />
     <Content Include="publications\Mechanics.pdf" />
-    <Content Include="publications\Tim_Peara_Pgmr_Jan16.pdf" />
     <Content Include="publications\Trade_Ideas_tgp.pdf" />
     <Content Include="publications\Vortex_Oil_tgp.pdf" />
     <Content Include="publications\Ionrex_USA_model_16b.xlsx" />
     <Content Include="publications\T_Peara_publications.pdf" />
+    <Content Include="publications\Tim_Peara_Pgmr_Apr17o.pdf" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -951,6 +943,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="themify-icons\Themify IconFonts 5-23-2014.json" />
+    <Content Include="tpeara.publishsettings" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     $("#freezeBtn").toggle(function () {
         hoverResumeDetail(false);
-        $("#freezeBtn").text("Mask detail");
+        $("#freezeBtn").text("Hide detail");
     }, function () {
         hoverResumeDetail(true);        
         $("#freezeBtn").text("Show detail");    
@@ -70,7 +70,7 @@ $(document).ready(function () {
         $(this).find('input:first').focus();
     });
     $('#numSeries').keyup(function (event) {
-        if (event.keyCode == '13') {
+        if (event.keyCode === '13') {
             $('#numSeriesBtn').click();
         }
     });
@@ -107,7 +107,7 @@ $(document).ready(function () {
         $(this).find('input:first').focus();
     });
     $('#numFactorial').keyup(function (event) {
-        if (event.keyCode == '13') {
+        if (event.keyCode === '13') {
             $('#factorialBtn').click();
         }
     });
@@ -129,14 +129,14 @@ $(document).ready(function () {
         $(this).find('input:first').focus();
     });
     $('#buzz').keyup(function (event) {
-        if (event.keyCode == '13') {
+        if (event.keyCode === '13') {
             $('#fizzBuzzBtn').click();
         }
     });
     $('#fizzBuzzBtn').click(function () {
 
         var s = ss = '';
-        if ($('#fizz').val()=='' || $('#buzz').val()=='') {
+        if ($('#fizz').val()==='' || $('#buzz').val()==='') {
             ss += 'Enter a number in each box.<br />';
         }
         else {
@@ -144,7 +144,7 @@ $(document).ready(function () {
             var bz = Number($(buzz).val());
             if (fz < 1 || bz < 1) ss += 'Numbers can\'t be less than 1.<br/>';
             if (fz > 100 || bz > 100) ss += 'Numbers can\'t be more than 100.<br/>';
-            if (fz != Math.round(fz) || bz != Math.round(bz)) ss += 'Integers only, please.<br/>';
+            if (fz !== Math.round(fz) || bz !== Math.round(bz)) ss += 'Integers only, please.<br/>';
             if (fz > bz) {
                 var x = fz;
                 fz = bz;
@@ -154,22 +154,22 @@ $(document).ready(function () {
             }
         }
 
-        if (ss == "") {
+        if (ss === "") {
             for (j = 1; j <= 100; j++) {
                 s = "";
-                if (j % fz == 0) s += "fizz";
-                if (j % bz == 0) s += "buzz";
-                if ((j % fz != 0) && (j % bz != 0)) {
+                if (j % fz === 0) s += "fizz";
+                if (j % bz === 0) s += "buzz";
+                if (j % fz !== 0 && j % bz !== 0) {
                     s += j;
                     if (j < 10) s += "...";
                     else s += "..";
                 }
-                if ((j % fz == 0) && (j % bz == 0)) {
+                if (j % fz === 0 && j % bz === 0) {
                     s += ".";
                     s = s.toUpperCase();
                 }
                 s += ".";
-                if (j % 10 == 0) s += "<br>";
+                if (j % 10 === 0) s += "<br>";
                 ss += s;
             }
             ss += "\n";
@@ -186,7 +186,7 @@ $(document).ready(function () {
         $(this).find('input:first').focus();
     });
     $('#paliWord').keyup(function (event) {
-        if (event.keyCode == '13') {
+        if (event.keyCode === '13') {
             $('#palindromeBtn').click();
         }
     });
@@ -202,9 +202,9 @@ $(document).ready(function () {
             });
         } else {
             var reverseWord = checkWord.split('').reverse().join('');
-            isPalindrome = (checkWord == reverseWord) ? 'TRUE' : 'FALSE';
+            isPalindrome = checkWord === reverseWord ? 'TRUE' : 'FALSE';
 
-            isPalindrome = (checkWord == reverseWord) ? ' is a Palindrome!' : ' is not a Palindrome.';
+            isPalindrome = checkWord === reverseWord ? ' is a Palindrome!' : ' is not a Palindrome.';
 
             $('#palindromeResult').html(checkWord + isPalindrome).css('visibility', 'visible');
         }
@@ -228,8 +228,8 @@ $(document).ready(function () {
         if (i > 0) {
             for (i = 0; i < nArray.length; i++) {
                 x = nArray[i];
-                minN = (x < minN ? x : minN);
-                maxN = (x > maxN ? x : maxN);
+                minN = x < minN ? x : minN;
+                maxN = x > maxN ? x : maxN;
                 sumN += x;
                 productN *= x;
             }
